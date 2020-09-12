@@ -1,0 +1,43 @@
+.vector {
+	border: 4px solid pink;
+}
+
+.circle_end {
+	stroke: red;
+}
+
+.circle_end_green {
+	stroke: green;	
+}
+
+.circle_end_yellow {
+	stroke: yellow;
+}
+
+.node_2 {
+	stroke: gray;
+}
+
+.node_1_line {
+	stroke: gray;
+}
+
+.node_1_circle {
+	stroke: gray;
+}
+
+.line_green {
+	stroke: green;
+}
+
+.line_red {
+	stroke: red;
+}
+
+.arrow {
+	stroke: blue;
+}
+
+.force_line {
+	stroke: blue;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="vector" height="250" width="350">
+	</svg>
+	<form method="POST">
+		<button class="send_server"> Отправить форму на сервер </button>
+	</form>
+	<fieldset>
+		<legend>Создание отрезка</legend>
+		<button class="create_line"> Создать отрезок </button><br>
+		<input type="text" id="lines"><br>
+		<input type="text" id="line_length" required placeholder="line_length [м]" value="150"><br>
+		<input type="text" id="line_angle_degrees" required placeholder="line_angle_degrees [гр]" value="15"><br>
+		<input type="tex" id="distance_point" placeholder="distance_length [м]" value="50"><br>	
+	</fieldset>
+	<button class="node_2"> Создать связь 2-го рода (шарнир) </button><br>	
+	<input type="text" id="nodes_2"><br>
+	<button class="node_1">Создать связь 1-го рода (опора)</button><br>
+	<input type="text" class="node_1_angle" placeholder="угол наклона связи [гр]" value="45"><br>
+	<input type="text" class="node_1_distance" placeholder="расстояние от крайней левой точки отрезка [м]" value="50"><br>
+	<input type="text" id="nodes_1"><br>
+	<button class="force_point">Нагрузка</button><br>
+	<input type="text" class="force_point_angle" placeholder="угол наклона силы [гр] относит класс Х" value="45"><br>
+	<input type="text" class="force_point_distance" placeholder="расстояние от крайней левой точки отрезка [м]" value="50"> <br>
+	<input type="text" class="force_point_direction" placeholder="1 по Х и Y, -1 против Х и Y" value="1">
+	<input type="text" class="force_point_modul" placeholder="введите величину силы в [Н]" value="1000">
+	<input type="text" id="forces_point"><br>
+
+
+	<script src="script.js"></script>
+
+
+
+</body>
+</html>
